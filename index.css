@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+header {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #57290B;
+
+}
+.cabecalho{
+   color: white; 
+   font-size: 18px;
+}
