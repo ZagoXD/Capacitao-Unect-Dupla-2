@@ -173,4 +173,12 @@ header {
 
 }
 
-
+footer{
+    background-color: #57290B;
+    color: #ffdab8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 110px;
+}
