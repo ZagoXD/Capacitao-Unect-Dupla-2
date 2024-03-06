@@ -3,12 +3,48 @@ body{
 }
 header {
     margin: 0;
+    height: 100px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     background-color: #57290B;
 
 }
+
 .cabecalho{
    color: white; 
    font-size: 18px;
+   margin: 0;
+ 
+}
+.sublinhado{
+    width: 43px;
+    height: 2px;
+    background-color: #B2784A;
+    margin: 0 auto;
+
+}
+.material-icons{
+    color: #B2784A;
+    margin: 3px;
+}
+.divTelefone{
+    display: flex;
+    align-items: center;
+}
+.imgCabecalho{
+    margin-top: -20px;
+    margin-bottom: -35px;
+    width: 120px;
+    height: 120px;
+
+}
+.divHeaderCentral{
+    text-align: center;
+}
+.cabecalho2{
+    color: #F0F0F0; 
+    font-size: 15px;
+    font-weight: lighter;
+
 }
