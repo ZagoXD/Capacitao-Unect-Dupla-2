@@ -1,8 +1,25 @@
 body{
     margin: 0;
+    padding: 0;
 }
+
+a{
+    text-decoration: none;
+}
+
 header {
+    width: 100%;
+    height: 559px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-image: url(imgs/header.png);
+    margin-top: -38px;
+
+}
+
+#nav {
     margin: 0;
+    padding: 0;
     height: 100px;
     display: flex;
     align-items: center;
@@ -11,7 +28,7 @@ header {
 
 }
 
-.cabecalho{
+.itemNav{
    color: white; 
    font-size: 18px;
    margin: 0;
@@ -32,45 +49,128 @@ header {
     display: flex;
     align-items: center;
 }
-#imgCabecalho{
+#imgNav{
     margin-top: -20px;
     margin-bottom: -35px;
     width: 120px;
     height: 120px;
 
 }
-#divHeaderCentral{
+#divNavCentral{
     text-align: center;
 
 }
-#cabecalho2{
+#itemNav2{
     color: #F0F0F0; 
     font-size: 15px;
     font-weight: lighter;
 
 }
+
+#divHeader{
+    width: 589px;
+    height: 310px;
+    margin-left: 119px;
+
+}
+
+#tituloHeader{
+    color: white;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+#subTituloHeader{
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+#botaoHeader{
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8F542E;
+    color: #F0F0F0;
+    height: 47px;
+    width: 190px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+
 @media screen and (max-width: 768px){
-    .cabecalho{
+    .itemNav{
         display: none;
     }
+
     .sublinhado{
         display: none;
     }
+
     #fone{
         display: none;
     }
-    #divHeaderCentral{
+
+    #divNavCentral{
         width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
-    #imgCabecalho{
+
+    #imgNav{
         margin-bottom: 0;
     }
-    #divCabecalhoCentral{
+
+    #divLogoCentral{
         width: 100%;
         margin-left: -100px;
     }
 
+    header{
+        width: 100%;
+        height: 242px;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-image: url(imgs/header.png);
+        margin-top: -38px;
+    }
+
+    #divHeader{
+        margin-left: 15px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+    }
+
+    #subTituloHeader{
+        display: none;
+    }
+
+    #tituloHeader{
+        color: white;
+        font-size: 28px;
+        font-weight: 600;
+        height: 96px;
+        width: 300px;
+    }
+
+    #botaoHeader{
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #8F542E;
+        color: #F0F0F0;
+        height: 44px;
+        width: 150px;
+        font-size: 14px;
+        font-weight: 800;
+    }
+
 }
+
+
