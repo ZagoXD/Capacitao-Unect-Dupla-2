@@ -24,7 +24,7 @@ header {
     margin: 0 auto;
 
 }
-.material-icons{
+#fone{
     color: #B2784A;
     margin: 3px;
 }
@@ -32,19 +32,45 @@ header {
     display: flex;
     align-items: center;
 }
-.imgCabecalho{
+#imgCabecalho{
     margin-top: -20px;
     margin-bottom: -35px;
     width: 120px;
     height: 120px;
 
 }
-.divHeaderCentral{
+#divHeaderCentral{
     text-align: center;
+
 }
-.cabecalho2{
+#cabecalho2{
     color: #F0F0F0; 
     font-size: 15px;
     font-weight: lighter;
+
+}
+@media screen and (max-width: 768px){
+    .cabecalho{
+        display: none;
+    }
+    .sublinhado{
+        display: none;
+    }
+    #fone{
+        display: none;
+    }
+    #divHeaderCentral{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #imgCabecalho{
+        margin-bottom: 0;
+    }
+    #divCabecalhoCentral{
+        width: 100%;
+        margin-left: -100px;
+    }
 
 }
