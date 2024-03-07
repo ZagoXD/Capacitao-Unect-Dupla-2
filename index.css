@@ -99,7 +99,41 @@ header {
     font-weight: 800;
 }
 
+.divNumber{
+    display: flex;
+    align-items: center;
+}
 
+.divEmail{
+    display: flex;
+    align-items: center;
+}
+
+.divLocation{
+    display: flex;
+    align-items: center;
+}
+
+#mail{
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 100px;
+}
+
+.content1 {
+    background-color: #8F542E;
+    padding: 10px;
+}
+
+.content2{
+    width: calc(50% - 10px); /* 50% do tamanho da div pai menos 10px para o espaçamento entre as divs */
+    background-color: #F0F0F0;
+    padding: 10px;
+}
 
 @media screen and (max-width: 768px){
     .itemNav{
@@ -171,6 +205,23 @@ header {
         font-weight: 800;
     }
 
+}
+
+main{
+    background-color: white;
+}
+
+#botaoMain{
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8F542E;
+    color: #F0F0F0;
+    height: 47px;
+    width: 190px;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 footer{
