@@ -7,23 +7,24 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <title>Palavras Cafeinadas</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
     <!-- Nav Bar -->
     <nav id="nav">
         <div>
-            <a class="itemNav" href="#">Sobre Nós</a>
+            <a class="itemNav" data-alvo="sobreNos" href="">Sobre Nós</a>
         </div>
         <div>
-            <a class="itemNav" href="#">Cafeteria</a>
+            <a class="itemNav" data-alvo="" href="#">Cafeteria</a>
         </div>
         <div id="divNavCentral">
             <img id= "imgNav"src="imgs/logo_escura_1.png">
             <div id="divLogoCentral"><p id="itemNav2">Palavra Cafeinada</p></div>
         </div>
         <div>
-            <a class="itemNav" href="#">Contato</a>
+            <a class="itemNav" data-alvo="" href="#">Contato</a>
         </div>
         <div class="divTelefone">
             <span class="material-icons" id="fone">call</span>
@@ -86,6 +87,16 @@
         <p>Todos os direitoss reservados ©</p>
     </footer>
 
+    <script>
+        // Script para rolar pagina
+        $(".itemNav").click(function(event) {
+            event.preventDefault(); 
+            var target = $(this).data("alvo");
+            $('html, body').animate({
+                scrollTop: $("#" + target).offset().top
+            }, 800);
+        });
+    </script>
 
 </body>
 </html>
