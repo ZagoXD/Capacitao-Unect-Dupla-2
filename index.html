@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <title>Palavras Cafeinadas</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Palavras Cafeinadas</title>
 </head>
 <body>
 
@@ -17,7 +16,7 @@
             <a class="itemNav" data-alvo="sobreNos" href="">Sobre Nós</a>
         </div>
         <div>
-            <a class="itemNav" data-alvo="" href="#">Cafeteria</a>
+            <a class="itemNav" data-alvo="cafeteria" href="#">Cafeteria</a>
         </div>
         <div id="divNavCentral">
             <img id= "imgNav"src="imgs/logo_escura_1.png">
@@ -41,12 +40,12 @@
             <p id="subTituloHeader">
                 Aonde a paixão por livros e o amor por café sempre tem lugar à mesa.
             </p>
-            <a class="botao" href="#">Venha Conhecer<span class="material-icons">arrow_right_alt</span></a>
+            <a class="botao" href="#" data-alvo="cafeteria" >Venha Conhecer<span class="material-icons">arrow_right_alt</span></a>
         </div>
     </header>
 
     <!-- Sobre Nós -->
-    <div id="sobreNos">
+    <section id="sobreNos">
         <div id="containerSobre">
             <div class="fundoMarrom">
                 <h1 id="tituloSobre">
@@ -71,14 +70,16 @@
             <div>
                 <img id="imgSobre" src="imgs/imgsobre.png">
             </div>
-    </div>
+    </section>
 
-    <img id="onda" src="imgs/cafeonda.png">
+    <div id="teste"></div>
 
     <!-- Carousel -->
-    <div style="width: 100%; height: 745px; background-color: #80451F;">
-
-    </div>
+    <section id="carousel">
+        <div id="containerCarousel">
+            <p id="cafeteria">CAFETERIA</p>
+        </div>
+    </section>
 
 
     <!-- Rodapé -->
@@ -89,7 +90,7 @@
 
     <script>
         // Script para rolar pagina
-        $(".itemNav").click(function(event) {
+        $(".itemNav, .botao").click(function(event) {
             event.preventDefault(); 
             var target = $(this).data("alvo");
             $('html, body').animate({
