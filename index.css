@@ -13,7 +13,12 @@ a{
     height: 199px;  
     top: 1200px; 
     background: url(imgs/cafeonda.png);
-
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -207,6 +212,16 @@ header {
     justify-content: center;
 }
 
+footer{
+    background-color: #57290B;
+    color: #ffdab8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 110px;
+}
+
 @media screen and (max-width: 768px){
 
     #teste{
@@ -343,15 +358,12 @@ header {
         align-items: center;
     }
 
+    footer{
+        background-color: #57290B;
+        color: #ffdab8;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 9px;
+    }
+
 }
 
-
-footer{
-    background-color: #57290B;
-    color: #ffdab8;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 110px;
-}
