@@ -56,6 +56,7 @@ header {
     color: white; 
     font-size: 18px;
     margin: 0;
+    font-family: "Cormorant Garamond", serif;
 
 }
 
@@ -64,6 +65,7 @@ header {
    font-size: 18px;
    margin: 0;
    position: relative;
+   font-family: "Cormorant Garamond", serif;
  
 }
 
@@ -85,6 +87,7 @@ header {
     margin: 0;
     position: relative;
     margin-top: 200px;
+    font-family: "Cormorant Garamond", serif;
   
  }
  
@@ -126,6 +129,7 @@ header {
     color: #F0F0F0; 
     font-size: 15px;
     font-weight: lighter;
+    font-family: "Cormorant Garamond", serif;
 
 }
 
@@ -134,6 +138,7 @@ header {
     height: 310px;
     margin-left: 119px;
     margin-top: 30px;
+    font-family: "Open Sans", sans-serif;
 
 }
 
@@ -157,9 +162,11 @@ header {
     background-color: #8F542E;
     color: #F0F0F0;
     height: 47px;
-    width: 185px;
+    width: 190px;
     font-size: 18px;
     font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+
 }
 
 #sobreNos{
@@ -175,11 +182,15 @@ header {
     height: 170px;
     color: #1F0C00;
     font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 50px;
+    
 }
 
 #tituloSobre{
     font-size: 40px;
     color: #1F0C00;
+    font-family: "Cormorant Garamond", serif;
     
 }
 
