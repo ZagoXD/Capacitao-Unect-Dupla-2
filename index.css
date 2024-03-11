@@ -26,38 +26,36 @@ a{
     height: 500px; /* Altura da imagem */
   }
   
-  .carousel-images {
+.carousel-images {
     display: flex;
     width: 140%; /* Largura total das imagens */
     margin-left: 110px;
-  }
+}
   
-  .item{
+.item{
     width: 255px; 
     height: 400px; 
     margin: 20px; 
     background-color: white;
     border-radius: 10px;
-  }
+    margin-top: 10px; 
+    text-align: center;
+}
   
-  .carousel-images img {
+.carousel-images img {
     width: 220px;
     height: 220px;
     border-radius: 10px;
-  }
+    margin-top: 10px;
+}
 
-#teste{
+#onda img{
     position: absolute; 
     width: 100%; 
     height: 199px;  
     top: 1200px; 
-    background: url(imgs/cafeonda.png);
     background-size: cover;
     background-position: center;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -251,7 +249,7 @@ header {
     margin-top: -40px;
 }
 
-#carousel{
+#carouselBackground{
     height: 745px; 
     background-color: #80451F;
 }
@@ -274,26 +272,59 @@ footer{
 
 @media screen and (max-width: 768px){
 
-    #teste{
-        display: none;
+    .carousel {
+        overflow-x: auto; /* Alterado para permitir rolagem horizontal */
+        overflow-y: hidden; /* Oculta a rolagem vertical */
+        width: 100%;
+        height: auto; /* Ajustado para altura automática */
+      }
+
+      .carousel-images {
+        display: flex;
+        width: 140%; /* Largura total das imagens */
+        margin-left: 80px;
+    }
+
+      .carousel-images img {
+        width: 180px;
+        height: 180px;
+        border-radius: 10px;
+      }
+
+
+    #containerTituloCarousel{
+        display: flex; 
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .tituloItemCarousel{
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+    
+    }
+    
+    .itemCarousel{
+        font-size: 15px;
+        font-family: "Open Sans", sans-serif;
+    
+    }
+
+
+    #onda img{
         position: absolute; 
         width: 100%; 
-        height: 199px;  
+        height: 99px;  
         top: 800px; 
-        background: url(imgs/cafeonda.png);
-    
     }
 
     .item{
         padding: 10px;
-        width: 160px;
+        width: 220px;
         height: 360px;
         background-color: white;
         border-radius: 5px;
-    }
-
-    .owl-carousel{
-        justify-content: center;
     }
 
     #nav{
@@ -416,7 +447,7 @@ footer{
     #sobreNos{
         display: flex;
         width: 100%;
-        height: 480px;
+        height: 500px;
         justify-content: space-around;
         align-items: center;
     }
