@@ -260,6 +260,258 @@ header {
     margin-bottom: 30px;
 }
 
+#entreEmContato {
+    display: flex;
+    height: 160vh;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.sublinhado{
+    display: flex;
+    width: 430px;
+    margin-top: -96px;
+    padding: 30px 0px;
+    margin-left: -620px;
+    background: linear-gradient(to bottom, transparent 50%, #FBC9A8 50%);
+}
+
+#tituloContato {
+    z-index: 1;
+    display: flex;
+    padding: 10px;
+    font-size: 40px;
+    margin-left: -750px;
+    padding-left: 150px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.containerContato {
+    width: 80%;
+    margin: 60px;
+    display: flex;
+    overflow: hidden;
+    height: 680px;
+    max-width: 1000px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: -5px 0px 10px -5px rgba(0.1, 0.1, 0.1, 0.2), 5px 0px 10px -5px rgba(0.2, 0.2, 0.3, 0.3);
+}
+
+.info {
+    background-color: #8F542E;
+}
+
+.info,
+.form {
+    flex: 1;
+    padding: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.divNumber {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+    margin-bottom: 15px;
+}
+
+.divNumber i {
+    display: flex;
+    color: white;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.divNumber span {
+    display: flex;
+    font-size: 15px;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+.divEmail {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.divEmail i{
+    display: flex;
+    color: white;
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.divEmail span {
+    display: flex;
+    font-size: 15px;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+.divLocation {
+    display: flex;
+    margin-left: 20px;
+}
+
+.divLocation i{
+    display: flex;
+    font-size: 25px;
+    color: #f0f0f0;
+    margin-top: 1.1em;
+    margin-right: 5px;
+}
+
+.divLocation p{
+    display: flex;
+    font-size: 15px;
+    color: #F0F0F0;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+.divider{
+    width: 300px;
+    border: none;
+    border-radius: 2px;
+    display: flex;
+    margin: 10px 20px;
+    border-bottom: 3px solid #B2784A;
+}
+
+.divInstagram {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.divInstagram i{
+    display: flex;
+    font-size: 25px;
+    color: white;
+    margin-right: 5px;
+}
+
+.divInstagram span {
+    display: flex;
+    color: #F0F0F0;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+.divFacebook {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.divFacebook i {
+    display: flex;
+    margin-right: 5px;
+    color: #f0f0f0;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.divFacebook span{
+    display: flex;
+    color: #F0F0F0;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+.containerIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cafezinhoBranco {
+    display: flex;
+    width: 50px; 
+    height: 230px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.cafezinhoBranco svg{
+    display: flex;
+}
+
+.textIcon{
+    display: flex;
+    font-size: 30px;
+    color: #F0F0F0;
+    text-align: center;
+    margin-top: -20px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+}
+
+.form{
+    padding: 30px;
+    background-color:#F5F3ED;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: flex;
+    border: 1px solid #8F542E;
+    border-radius: 5px;  
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+textarea[name="message"] {
+    display: flex;
+    width: 100%; 
+    height: 200px; 
+    margin-bottom: 20px;
+}
+
+#botaoMain {
+    display: flex;
+    color: #F0F0F0;
+    border-radius: 5px;
+    align-items: center;
+    text-decoration: none;
+    background-color: #8F542E;
+    justify-content: space-around;
+    height: 45px;
+    width: 230px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+#botaoMain:hover {
+    display: flex;
+    background-color: #B2784A;
+}
+
 footer{
     background-color: #57290B;
     color: #ffdab8;

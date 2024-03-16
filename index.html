@@ -8,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel = "stylesheet" type = "text/css" href="fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Palavras Cafeinadas</title>
@@ -130,48 +131,58 @@
           </div>
     </section>
 
-    <!-- Entre em Contato -->
-    <section id = "entreEmContato">
-        <div class="sublinhado">
-            <h2 id="tituloContato">
-                ENTRE EM CONTATO
-            </h2>
-        </div>
-            <div class="containerContato">
-                <div class="info">
-                     <div class="divNumber">
-                        <span class="material-icons" id="fone">call</span>
-                        <p id="number">19-991256972</p>
-                    </div>
+<!-- Entre em Contato -->
+<section id = "entreEmContato">
+        
+    <h2 id="tituloContato" >
+        ENTRE EM CONTATO
+    </h2>
+    <div class="sublinhado">
 
-                    <div class="divEmail">
-                        <span class="material-icons" id="mail">mail</span>
-                        <p class="email">contato@gmail.com</p>
-                    </div>
-
-                    <div class ="divLocation">
-                        <span class="material-icons" id="location">location_on</span>
-                        <p class="endereco">Av.Paulista, 1324 - Bela Vista São Paulo - SP, 01310-100</p>
-                    </div>
-                <p>@palavrascafeinadas</p>
-                <p>Palavras Cafeinadas</p>
-                    <div id="cafezinhoBranco">
-                        <img id = "imgIconeCafe" src = "imgs/Icone_Cafe_Branco.png" alt="Icone de Cafe">
-                        <p>Palavras Cafeinadas</p>
-                    </div>
+    </div>
+        <div class="containerContato">
+            <div class="info">
+                <div class="divNumber">
+                    <i class="fa-solid fa-square-phone"></i>
+                    <span>19-991256972</span>
                 </div>
-                <div class="form">
-                    <form action="#" method="post">
-                        <label for="name">Nome:</label><br>
-                        <input type="text" id="name" name="name" required><br>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" required><br>
-                        <label for="message">Mensagem:</label><br>
-                        <textarea id="message" name="message" rows="10" required></textarea><br>
-                        <a id="botaoMain" href="#">Enviar Mensagem<span class="material-icons">arrow_right_alt</span></a>                        </form>
+                <div class="divEmail">
+                    <i class="fa-solid fa-square-envelope"></i>
+                    <span>contato@gmail.com</span>
                 </div>
-            </div>   
-    </section>
+                <div class ="divLocation">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Av.Paulista, 1324 - Bela <br> São Paulo - SP, <br> 01310-100</p>
+                </div>
+                <hr class="divider">
+                <div class="divInstagram">
+                     <i class="fa-brands fa-square-instagram"></i>
+                    <span>@palavrascafeinadas</span>
+                </div>
+                <div class="divFacebook">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <span>Palavras Cafeinadas</span>
+                </div>
+                <div class="containerIcon">
+                    <div class="cafezinhoBranco">
+                        <img src = "imgs/Icone_Cafe_Branco.svg" alt="Icone de Cafe">
+                    </div>
+                    <div class="textIcon">Palavras Cafeinadas</div>
+                </div>
+            </div>
+            <div class="form">
+                <form action="#" method="post">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Mensagem:</label><br>
+                    <textarea id="message" name="message" rows="10" required></textarea><br>
+                    <a id="botaoMain" href="#">ENVIAR MENSAGEM<span class="material-icons">arrow_right_alt</span></a>
+                </form>
+            </div>
+        </div>   
+    </section>
 
     <!-- Rodapé -->
     <footer>
