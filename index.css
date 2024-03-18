@@ -551,6 +551,20 @@ footer{
 
 @media screen and (max-width: 768px){
 
+    #nav {
+        position: fixed;
+    }
+
+    #cafeteria{
+        color: white; 
+        font-size: 40px;
+        margin: 0;
+        position: relative;
+        margin-top: 100px;
+        font-family: "Cormorant Garamond", serif;
+      
+    }
+
     .carousel {
         overflow-x: auto; /* Alterado para permitir rolagem horizontal */
         overflow-y: hidden; /* Oculta a rolagem vertical */
@@ -595,7 +609,7 @@ footer{
         position: absolute; 
         width: 100%; 
         height: 99px;  
-        top: 800px; 
+        top: 880px; 
     }
 
     .item{
@@ -604,10 +618,6 @@ footer{
         height: 360px;
         background-color: white;
         border-radius: 5px;
-    }
-
-    #nav{
-        position: absolute;
     }
 
     .itemNav{
@@ -660,10 +670,7 @@ footer{
     }
 
     #divHeader{
-        margin-left: 15px;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: 30px;
+        margin-left: 20px;
     }
 
     #subTituloHeader{
@@ -720,13 +727,12 @@ footer{
     #botaoFale{
         display: flex;
         justify-content: center;
-        margin-top: -40px;
     }
 
     #sobreNos{
         display: flex;
         width: 100%;
-        height: 500px;
+        height: 570px;
         justify-content: space-around;
         align-items: center;
     }
