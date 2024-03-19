@@ -262,34 +262,37 @@ header {
 
 #entreEmContato {
     display: flex;
-    height: 150vh;
-    align-items: center;
+    height: 130vh;
+    width: 80%;
+    align-items: flex-start;
     flex-direction: column;
-    margin-top: 70px;
+    margin: 70px auto;
+    padding: 20px;
+}
+
+.titleContato {
     margin-bottom: 0px;
-}
-
-.sublinhado{
-    display: flex;
-    width: 430px;
-    margin-top: -96px;
-    padding: 30px 0px;
-    margin-left: -620px;
-    background: linear-gradient(to bottom, transparent 50%, #FBC9A8 50%);
-}
-
-#tituloContato {
+  }
+  
+  .titleContato h2 {
+    text-align: left;
+    font-size: 35px;
+    position: relative;
     z-index: 1;
-    display: flex;
-    padding: 10px;
-    font-size: 40px;
-    margin-left: -750px;
-    padding-left: 150px;
     font-family: "Cormorant Garamond", serif;
-}
+  }
+  
+.underline {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, transparent 50%, #FBC9A8 50%);
+    padding: 0 20px;
+    height: 42px;
+  }
 
 .containerContato {
-    width: 80%;
+    width: 100%;
     margin-top: 60px;
     display: flex;
     overflow: hidden;
@@ -299,6 +302,7 @@ header {
     background-color: #fff;
     box-shadow: -5px 0px 10px -5px rgba(0.1, 0.1, 0.1, 0.2), 5px 0px 10px -5px rgba(0.2, 0.2, 0.3, 0.3);
 }
+
 
 .info {
     background-color: #8F542E;
@@ -743,25 +747,23 @@ footer{
 
     #entreEmContato {
         height: 100%;
-        align-items: center;
-        flex-direction: column;
         margin-top: 90px;
+        margin-bottom: 30px;
     }
 
-    .sublinhado{
+    .underline{
         display: flex;
-        width: 430px;
-        padding: 30px 0px;
-        margin-left: -220px;
-        background: linear-gradient(to bottom, transparent 50%, #FBC9A8 50%);
+        height: 30px;
+        width: 400px;
+        padding: 10px 0px;
     }
 
-    #tituloContato {
-        padding-left: 550px;
+    .titleContato {
+        text-align: left;
     }
 
     .containerContato {
-        height: 750px;
+        height: 690px;
         box-shadow: 5px 5px 10px -5px rgba(0.5, 0.5, 0.5, 0.5);
     }
 
@@ -891,9 +893,7 @@ footer{
     .form{
         padding: 30px;
         background-color:#F5F3ED;
-        font-size: 25px;
-        font-weight: bold;
-        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
     }
 
     input[type="text"],
