@@ -29,7 +29,7 @@ carousel.addEventListener('mousemove', (e) => {
 
 carousel.addEventListener('scroll', () => {
   const { scrollWidth, scrollLeft, clientWidth } = carousel;
-  const threshold = 10; // Adjust threshold as needed for smooth scrolling
+  const threshold = 10; //mudar fluidez scroll
 
   if (scrollLeft < threshold) {
     carousel.scrollLeft = scrollLeft + scrollWidth - threshold;
@@ -38,7 +38,7 @@ carousel.addEventListener('scroll', () => {
   }
 });
 
-// Disable text selection while dragging
+
 carousel.addEventListener('dragstart', (e) => {
   e.preventDefault();
 });

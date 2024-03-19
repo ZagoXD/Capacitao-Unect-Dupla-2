@@ -23,12 +23,12 @@ a{
 .carousel {
     overflow: hidden;
     width: 100%;
-    height: 500px; /* Altura da imagem */
+    height: 500px; 
   }
   
 .carousel-images {
     display: flex;
-    width: 140%; /* Largura total das imagens */
+    width: 140%; 
     margin-left: 110px;
 }
   
@@ -56,6 +56,15 @@ a{
     top: 1200px; 
     background-size: cover;
     background-position: center;
+}
+
+#containerInfo{
+    display: flex; 
+    box-shadow: -5px 0px 10px -5px rgba(0.1, 0.1, 0.1, 0.2), 5px 0px 10px -5px rgba(0.2, 0.2, 0.3, 0.3);
+}
+
+#containerTituloContato{
+    margin: 20px 0px;
 }
 
 header {
@@ -231,13 +240,24 @@ header {
     
 }
 
+.titleContato {
+    margin-bottom: 0px;
+  }
+  
+  .titleContato h2 {
+    font-size: 35px;
+    position: relative;
+    z-index: 1;
+    font-family: "Cormorant Garamond", serif;
+  }
+
 .fundoMarrom{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    height: 56px;
-    width: 255px;
     background: linear-gradient(to bottom, transparent 50%, #FBC9A8 50%);
+    padding: 0 10px;
+    height: 42px;
 }
 
 #imgSobre{
@@ -262,47 +282,22 @@ header {
 
 #entreEmContato {
     display: flex;
-    height: 130vh;
-    width: 80%;
-    align-items: flex-start;
+    height: 150vh;
+    align-items: center;
     flex-direction: column;
-    margin: 70px auto;
-    padding: 20px;
+    margin-top: 70px;
+    margin-bottom: 0px;
 }
 
-.titleContato {
-    margin-bottom: 0px;
-  }
-  
-  .titleContato h2 {
-    text-align: left;
-    font-size: 35px;
-    position: relative;
-    z-index: 1;
-    font-family: "Cormorant Garamond", serif;
-  }
-  
-.underline {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, transparent 50%, #FBC9A8 50%);
-    padding: 0 20px;
-    height: 42px;
-  }
-
 .containerContato {
-    width: 100%;
+    width: 80%;
     margin-top: 60px;
-    display: flex;
     overflow: hidden;
-    height: 680px;
+    height: auto;
     max-width: 1000px;
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: -5px 0px 10px -5px rgba(0.1, 0.1, 0.1, 0.2), 5px 0px 10px -5px rgba(0.2, 0.2, 0.3, 0.3);
 }
-
 
 .info {
     background-color: #8F542E;
@@ -555,6 +550,11 @@ footer{
 
 @media screen and (max-width: 768px){
 
+    .titleContato h2{
+        text-align: left;
+        font-size: 31px;
+    }
+
     #nav {
         flex-direction: column;
         height: 80px;
@@ -592,15 +592,15 @@ footer{
     }
 
     .carousel {
-        overflow-x: auto; /* Alterado para permitir rolagem horizontal */
-        overflow-y: hidden; /* Oculta a rolagem vertical */
+        overflow-x: auto; 
+        overflow-y: hidden; 
         width: 100%;
-        height: auto; /* Ajustado para altura automática */
+        height: auto; 
       }
 
     .carousel-images {
         display: flex;
-        width: 100%; /* Largura total das imagens */
+        width: 100%; 
         margin-left: 80px;
     }
 
@@ -716,15 +716,6 @@ footer{
         
     }
 
-    .fundoMarrom{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 42px;
-        width: 159px;
-        background: linear-gradient(to bottom, transparent 50%, #FBC9A8 50%);
-    }
-
     #textoSobre{
         width: 280px;
         height: 330px;
@@ -747,24 +738,21 @@ footer{
 
     #entreEmContato {
         height: 100%;
+        align-items: center;
+        flex-direction: column;
         margin-top: 90px;
-        margin-bottom: 30px;
     }
 
-    .underline{
+    .sublinhado{
         display: flex;
-        height: 30px;
-        width: 400px;
-        padding: 10px 0px;
+        width: 430px;
+        padding: 30px 0px;
+        margin-left: -220px;
+        background: linear-gradient(to bottom, transparent 50%, #FBC9A8 50%);
     }
 
-    .titleContato {
-        text-align: left;
-    }
-
-    .containerContato {
-        height: 690px;
-        box-shadow: 5px 5px 10px -5px rgba(0.5, 0.5, 0.5, 0.5);
+    #tituloContato {
+        padding-left: 550px;
     }
 
     .info {
@@ -893,7 +881,9 @@ footer{
     .form{
         padding: 30px;
         background-color:#F5F3ED;
-        font-size: 20px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: "Open Sans", sans-serif;
     }
 
     input[type="text"],
@@ -954,6 +944,11 @@ footer{
 
     footer p{
         margin: 2px 30px;
+    }
+
+    #containerTituloContato{
+        display: flex;
+        justify-content: center;
     }
 
 }
